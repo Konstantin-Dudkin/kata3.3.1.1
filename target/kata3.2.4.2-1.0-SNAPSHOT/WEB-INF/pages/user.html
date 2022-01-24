@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>USER</title>
+</head>
+<body>
+<h1 th:utext="${user.username}">username</h1>
+
+<table border="1">
+    <tr>
+        <th th:width="50">UserId</th>
+        <th th:width="120">UserName</th>
+        <th th:width="120">Password</th>
+    </tr>
+    <td th:utext="${user.id}">UserId</td>
+    <td th:utext="${user.username}">UserName</td>
+    <td th:utext="${user.password}">Password</td>
+</table>
+
+<br><br><br><br>
+<a href="/logout">LogOut</a>
+</body>
+</html>
